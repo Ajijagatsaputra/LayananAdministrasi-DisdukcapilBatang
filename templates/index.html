@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Disdukcapil Kabupaten Batang</title>
+    <link
+      rel="shortcut icon"
+      href="{{ url_for('static', filename='images/lg-batang.png') }}"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img
+            src="{{ url_for('static', filename='images/lg-batang.png') }}"
+            alt="Logo Disdukcapil Brebes"
+          />
+          <div class="logo-text">
+            <h1>DISDUKCAPIL</h1>
+            <h2>Kabupaten Batang</h2>
+          </div>
+        </div>
+        <nav>
+          <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+          <ul class="nav-menu">
+            <li><a href="#home">Beranda</a></li>
+            <li class="dropdown">
+              <a href="#layanan">Layanan</a>
+              <ul class="dropdown-menu">
+                <li><a href="#akta-kelahiran">Akta Kelahiran</a></li>
+                <li><a href="#ktp">KTP</a></li>
+                <li><a href="#kartu-keluarga">Kartu Keluarga</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#prosedur">Prosedur</a></li>
+            <li><a href="#persyaratan">Persyaratan</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <span class="hero-badge">Layanan Resmi</span>
+          <h1>Layanan Administrasi Kependudukan Digital</h1>
+          <p>
+            Nikmati kemudahan layanan seperti pembuatan KTP, KK, dan Akta
+            Kelahiran secara online — cepat, transparan, dan tanpa antre.
+            Dibantu oleh <strong>chatbot pintar</strong> kami, semua proses bisa
+            dimulai langsung dari rumah Anda, 24 jam sehari.
+          </p>
+          <div class="cta-buttons">
+            <a href="#prosedur" class="btn primary">Cara Mengajukan</a>
+            <a href="#persyaratan" class="btn secondary">Cek Persyaratan</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">14</span>
+              <span class="stat-text">Hari Kerja</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">0</span>
+              <span class="stat-text">Biaya</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">24/7</span>
+              <span class="stat-text">Informasi</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img
+            src="{{ url_for('static', filename='images/hero-disdukcapil.jpg') }}"
+            alt="Layanan Administrasi Disdukcapil Batang"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Announcement Banner -->
+    <div class="announcement-banner">
+      <div class="container">
+        <i class="fas fa-bullhorn"></i>
+        <p>
+          Penting: Layanan administrasi seperti pembuatan KK, KTP, dan Akta Kelahiran adalah hak setiap masyarakat dan
+          <strong>GRATIS</strong>. Laporkan jika ada pungutan biaya!
+        </p>
+        <a href="//wa.me/6285647492399" class="banner-link">Hubungi Kami</a>
+      </div>
+    </div>
+
+    <!-- Services Section -->
+    <section id="layanan" class="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Layanan Kami</span>
+          <h2 class="section-title">Layanan Administrasi Kami</h2>
+          <p class="section-description">
+            Disdukcapil Kabupaten Batang menyediakan berbagai layanan terkait
+            administrasi untuk memenuhi kebutuhan masyarakat
+          </p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-baby"></i>
+            </div>
+            <h3>Akta Kelahiran Baru</h3>
+            <p>
+              Layanan ini diperuntukkan bagi bayi baru lahir yang berusia 0
+              hingga 60 hari. Proses penerbitan akta dilakukan secara cepat dan
+              efisien untuk memastikan setiap anak memiliki identitas hukum
+              sejak dini. Pemohon hanya perlu menyiapkan dokumen persyaratan
+              seperti surat kelahiran dari rumah sakit atau bidan, fotokopi KTP
+              orang tua, dan kartu keluarga. Dengan sistem pelayanan yang
+              terintegrasi, akta kelahiran dapat diterbitkan dalam waktu singkat
+              tanpa dipungut biaya.
+            </p>
+            <a href="#prosedur" class="service-link"
+              >Selengkapnya <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-child"></i>
+            </div>
+            <h3>Pembuatan KTP</h3>
+            <p>
+              Masyarakat dapat mengajukan pembuatan KTP elektronik secara mudah
+              dan transparan. Fitur pemantauan status, notifikasi otomatis,
+              serta asisten chatbot interaktif tersedia untuk mendampingi setiap
+              proses, kapan saja.
+            </p>
+            <a href="#prosedur" class="service-link"
+              >Selengkapnya <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-sync-alt"></i>
+            </div>
+            <h3>Perbaikan Akta</h3>
+            <p>
+              Layanan perbaikan data pada akta kelahiran yang sudah terbit
+              dengan kesalahan data.
+            </p>
+            <a href="#prosedur" class="service-link"
+              >Selengkapnya <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-copy"></i>
+            </div>
+            <h3>Pembuatan KK (Kartu Keluarga)</h3>
+            <p>
+              Layanan ini melayani permohonan pembuatan KK baru karena pindah
+              domisili, penambahan anggota keluarga, atau penggantian akibat
+              hilang/rusak. Pemohon cukup menyiapkan dokumen seperti surat
+              pengantar RT/RW, formulir permohonan, dan dokumen pendukung (akta
+              kelahiran, surat nikah, dll). Proses cepat, tanpa biaya, dan hasil
+              dapat langsung dicetak setelah verifikasi.
+            </p>
+            <a href="#prosedur" class="service-link"
+              >Selengkapnya <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Manfaat</span>
+          <h2 class="section-title">Pentingnya Layanan Disdukcapil</h2>
+          <p class="section-description">
+            Layanan administrasi kependudukan Disdukcapil memberikan berbagai
+            manfaat penting untuk masyarakat dalam mendapatkan dokumen resmi dan
+            akses pelayanan publik.
+          </p>
+        </div>
+        <div class="benefits-container">
+          <div class="benefit-item">
+            <div class="benefit-icon">
+              <i class="fas fa-id-card"></i>
+            </div>
+            <div class="benefit-content">
+              <h3>Identitas Hukum</h3>
+              <p>
+                Menerbitkan dokumen seperti KTP, KK, dan akta kelahiran sebagai
+                bukti sah identitas yang diakui negara untuk seluruh warga.
+              </p>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon">
+              <i class="fas fa-network-wired"></i>
+            </div>
+            <div class="benefit-content">
+              <h3>Akses Layanan Publik</h3>
+              <p>
+                Menjadi syarat untuk mengakses layanan penting seperti
+                kesehatan, pendidikan, perbankan, dan bantuan sosial.
+              </p>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <div class="benefit-content">
+              <h3>Pembaruan Data</h3>
+              <p>
+                Melayani perubahan data penduduk seperti pindah domisili, status
+                pernikahan, nama, dan lainnya secara legal dan terverifikasi.
+              </p>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon">
+              <i class="fas fa-globe"></i>
+            </div>
+            <div class="benefit-content">
+              <h3>Layanan Digital</h3>
+              <p>
+                Sebagian layanan kini tersedia secara online untuk memudahkan
+                masyarakat dalam mengurus dokumen tanpa harus datang ke kantor.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="prosedur" class="process">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Prosedur</span>
+          <h2 class="section-title">
+            Cara Mengajukan Layanan Administrasi Kependudukan
+          </h2>
+          <p class="section-description">
+            Ikuti langkah-langkah berikut untuk mengajukan berbagai layanan di
+            Disdukcapil Kabupaten Batang, seperti pembuatan KTP, KK, akta
+            kelahiran, akta kematian, dan lainnya.
+          </p>
+        </div>
+        <div class="process-steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h3>Persiapkan Dokumen Persyaratan</h3>
+              <p>
+                Kumpulkan dokumen sesuai jenis layanan, seperti KTP, KK, surat
+                keterangan lahir/kematian, buku nikah, dan lainnya.
+              </p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h3>Unduh atau Ambil Formulir</h3>
+              <p>
+                Formulir bisa diunduh melalui website resmi Disdukcapil Batang
+                atau diambil langsung di kantor pelayanan.
+              </p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h3>Isi dan Lengkapi Formulir</h3>
+              <p>
+                Isi formulir dengan data yang benar dan lengkap. Pastikan semua
+                berkas pendukung telah dilampirkan.
+              </p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h3><strong>Ajukan ke Disdukcapil atau Petugas Desa</strong></h3>
+              <p>
+                Serahkan berkas ke loket Disdukcapil Kabupaten Batang atau
+                melalui petugas registrasi di desa/kelurahan.
+              </p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">5</div>
+            <div class="step-content">
+              <h3>Proses Verifikasi & Penerbitan Dokumen</h3>
+              <p>
+                Petugas akan memverifikasi data dan memproses permohonan Anda.
+                Lama proses tergantung jenis layanan.
+              </p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">6</div>
+            <div class="step-content">
+              <h3>Pengambilan Dokumen</h3>
+              <p>
+                Dokumen yang telah selesai bisa diambil di kantor Disdukcapil
+                atau dikirim ke alamat Anda (jika layanan pengiriman tersedia).
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="process-note">
+          <i class="fas fa-info-circle"></i>
+          <p>
+            Untuk kelahiran yang terlambat dilaporkan (lebih dari 60 hari),
+            diperlukan penetapan dari Pengadilan Negeri atau persetujuan Kepala
+            Dinas.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Requirements Section -->
+    <section id="persyaratan" class="requirements">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Dokumen</span>
+          <h2 class="section-title">Persyaratan Pelayanan Administrasi</h2>
+          <p class="section-description">
+            Berikut adalah dokumen-dokumen yang perlu Anda siapkan untuk
+            mengakses layanan administrasi kependudukan di Disdukcapil Kabupaten Batang.
+          </p>
+        </div>
+        <div class="requirements-container">
+          <div class="requirements-card">
+            <h3>Pelayanan Akta Kelahiran</h3>
+            <ul class="requirements-list">
+              <li><i class="fas fa-check-circle"></i> Surat Keterangan Lahir dari fasilitas kesehatan</li>
+              <li><i class="fas fa-check-circle"></i> Fotokopi KTP orang tua</li>
+              <li><i class="fas fa-check-circle"></i> Fotokopi Kartu Keluarga</li>
+              <li><i class="fas fa-check-circle"></i> Buku Nikah/Akta Perkawinan (jika ada)</li>
+              <li><i class="fas fa-check-circle"></i> Formulir permohonan akta kelahiran</li>
+              <li><i class="fas fa-check-circle"></i> Surat kuasa bermaterai (jika diwakilkan)</li>
+            </ul>
+          </div>
+          <div class="requirements-card">
+            <h3>Pelayanan KTP-el dan KIA</h3>
+            <ul class="requirements-list">
+              <li><i class="fas fa-check-circle"></i> Fotokopi Kartu Keluarga terbaru</li>
+              <li><i class="fas fa-check-circle"></i> Surat pengantar dari RT/RW dan kelurahan</li>
+              <li><i class="fas fa-check-circle"></i> Formulir F1.01 atau F1.21 sesuai kebutuhan</li>
+              <li><i class="fas fa-check-circle"></i> Pas foto sesuai ketentuan (untuk KIA)</li>
+            </ul>
+          </div>
+          <div class="requirements-card">
+            <h3>Pelayanan Perubahan Data</h3>
+            <ul class="requirements-list">
+              <li><i class="fas fa-check-circle"></i> Fotokopi dokumen pendukung perubahan (ijazah, surat nikah, dll)</li>
+              <li><i class="fas fa-check-circle"></i> Kartu Keluarga asli</li>
+              <li><i class="fas fa-check-circle"></i> Surat pernyataan bermaterai (jika diperlukan)</li>
+            </ul>
+          </div>
+          <div class="requirements-card">
+            <h3>Pelayanan Surat Pindah dan Datang</h3>
+            <ul class="requirements-list">
+              <li><i class="fas fa-check-circle"></i> Kartu Keluarga asli</li>
+              <li><i class="fas fa-check-circle"></i> Surat pengantar RT/RW dan kelurahan</li>
+              <li><i class="fas fa-check-circle"></i> Formulir permohonan pindah/datang</li>
+              <li><i class="fas fa-check-circle"></i> Dokumen pendukung lainnya (jika ada)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Legal Basis Section -->
+    <section class="legal-basis">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Dasar Hukum</span>
+          <h2 class="section-title">Landasan Hukum</h2>
+          <p class="section-description">
+            Layanan administrasi kependudukan diselenggarakan berdasarkan peraturan
+            perundang-undangan yang berlaku
+          </p>
+        </div>
+        <div class="legal-basis-container">
+          <div class="legal-item">
+            <div class="legal-icon">
+              <i class="fas fa-gavel"></i>
+            </div>
+            <div class="legal-content">
+              <h3>Permendagri Nomor 14 Tahun 2020</h3>
+              <p>
+                Pedoman nomenklatur Disdukcapil di provinsi dan kabupaten/kota.
+              </p>
+            </div>
+          </div>
+          <div class="legal-item">
+            <div class="legal-icon">
+              <i class="fas fa-scroll"></i>
+            </div>
+            <div class="legal-content">
+              <h3>Permendagri Nomor 7 Tahun 2019</h3>
+              <p>
+                Aturan tentang pelayanan administrasi kependudukan secara
+                daring.
+              </p>
+            </div>
+          </div>
+          <div class="legal-item">
+            <div class="legal-icon">
+              <i class="fas fa-balance-scale"></i>
+            </div>
+            <div class="legal-content">
+              <h3>Permendagri Nomor 73 Tahun 2022</h3>
+              <p>
+                Aturan tentang pencatatan nama pada dokumen kependudukan,
+                termasuk jumlah minimal kata dan batasan karakter.
+              </p>
+            </div>
+          </div>
+          <div class="legal-item">
+            <div class="legal-icon">
+              <i class="fas fa-file-contract"></i>
+            </div>
+            <div class="legal-content">
+              <h3>Perda Kab. Batang</h3>
+              <p>
+                Tentang Penyelenggaraan Administrasi Kependudukan di Kabupaten
+                Batang
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Tanya Jawab</span>
+          <h2 class="section-title">Pertanyaan Umum</h2>
+          <p class="section-description">
+            Temukan jawaban atas pertanyaan yang sering diajukan terkait layanan administrasi kependudukan di Disdukcapil Kabupaten Batang.
+          </p>
+        </div>
+        <div class="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Berapa lama proses pembuatan akta kelahiran?</h3>
+              <span class="toggle-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Proses pembuatan akta kelahiran membutuhkan waktu maksimal 14 hari kerja setelah seluruh dokumen dinyatakan lengkap oleh petugas Disdukcapil Batang.
+              </p>
+            </div>
+          </div>
+    
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Apakah ada biaya untuk layanan kependudukan?</h3>
+              <span class="toggle-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Tidak. Semua layanan administrasi kependudukan seperti pembuatan KTP, KK, akta kelahiran, dan lainnya di Disdukcapil Kabupaten Batang **GRATIS** tanpa dipungut biaya.
+              </p>
+            </div>
+          </div>
+    
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Bagaimana cara mengurus KTP yang hilang?</h3>
+              <span class="toggle-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Anda perlu menyiapkan surat kehilangan dari kepolisian, fotokopi KK, dan mengajukan permohonan cetak ulang melalui layanan online atau datang langsung ke kantor Disdukcapil Batang.
+              </p>
+            </div>
+          </div>
+    
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Apakah bisa mengurus dokumen kependudukan secara online?</h3>
+              <span class="toggle-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Ya, sebagian besar layanan seperti akta kelahiran, KTP, KK, dan pindah datang dapat diurus secara online melalui website resmi Disdukcapil Kabupaten Batang atau platform digital yang tersedia.
+              </p>
+            </div>
+          </div>
+    
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Bagaimana jika orang tua belum memiliki buku nikah saat mengurus akta kelahiran anak?</h3>
+              <span class="toggle-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Akta kelahiran tetap dapat diterbitkan, namun hanya akan mencantumkan nama ibu. Untuk mencantumkan nama ayah, diperlukan surat pengakuan anak dari ayah dan persetujuan ibu, disahkan oleh notaris.
+              </p>
+            </div>
+          </div>
+    
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Apakah bisa diwakilkan untuk mengurus dokumen kependudukan?</h3>
+              <span class="toggle-icon">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Ya, bisa. Cukup melampirkan surat kuasa bermaterai dan fotokopi KTP pemberi dan penerima kuasa saat pengajuan dokumen.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Contact Section -->
+    <section id="kontak" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Hubungi Kami</span>
+          <h2 class="section-title">Kontak Disdukcapil Batang</h2>
+          <p class="section-description">
+            Jangan ragu untuk menghubungi kami jika Anda memiliki pertanyaan
+            atau membutuhkan bantuan
+          </p>
+        </div>
+        <div class="contact-container">
+          <div class="contact-info">
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h3>Alamat Kantor</h3>
+                <p>
+                  Akun Resmi Dinas Kependudukan dan Pencatatan Sipil Kabupaten
+                  Batang Jalan Dr. Wahidin No. 56 Kauman, Batang, Jawa Tengah
+                </p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h3>Telepon</h3>
+                <p>(0283) 671204</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h3>Email</h3>
+                <p>disdukcapil@batangkab.go.id</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-clock"></i>
+              <div>
+                <h3>Jam Pelayanan</h3>
+                <p>Senin - Kamis: 08.00 - 15.00 WIB</p>
+                <p>Jumat: 08.00 - 11.00 WIB</p>
+              </div>
+            </div>
+            <div class="social-media">
+              <h3>Media Sosial</h3>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form">
+            <h3>Kirim Pesan</h3>
+            <form>
+              <div class="form-group">
+                <label for="name">Nama Lengkap</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Nomor Telepon</label>
+                <input type="tel" id="phone" name="phone" />
+              </div>
+              <div class="form-group">
+                <label for="subject">Subjek</label>
+                <input type="text" id="subject" name="subject" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Pesan</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <a href="https://wa.me/6285647492399" target="_blank">
+                <button type="button" class="btn primary">Kirim Pesan</button>
+              </a>
+            </form>
+          </div>
+        </div>
+        <div class="map-container">
+          <h3>Lokasi Kami</h3>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.0988193024347!2d109.04494231477253!3d-6.872591995033941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fb9df8dc7d331%3A0x8c4b68a22c53d26b!2sDisdukcapil%20Brebes!5e0!3m2!1sen!2sid!4v1620123456789!5m2!1sen!2sid"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chatbot -->
+    <div class="chat-container">
+      <div class="chat-box" id="chatBox">
+        <div class="chat-header">
+          <div class="chat-header-info">
+            <img
+              src="{{ url_for('static', filename='images/logo_disdukcapil_batang.png') }}"
+              alt="Logo Chatbot"
+            />
+            <h3>DisdukcapilBot</h3>
+          </div>
+          <button id="closeChat"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+          <div class="message bot">
+            <div class="message-content">
+              <p>Selamat datang di Asisten Disdukcapil Batang! 👋</p>
+              <p>
+                Saya siap membantu Anda dengan informasi seputar layanan
+                administrasi yang dibutuhkan. Apa yang ingin Anda tanyakan?
+              </p>
+            </div>
+          </div>
+          <div class="message bot">
+            <div class="message-content">
+              <p>Anda dapat bertanya tentang:</p>
+              <ul class="chat-suggestions">
+                <li>
+                  <button class="suggestion-btn">
+                    Persyaratan akta kelahiran
+                  </button>
+                </li>
+                <li>
+                  <button class="suggestion-btn">
+                    Layanan KTP
+                  </button>
+                </li>
+                <li>
+                  <button class="suggestion-btn">
+                    Lokasi kantor Disdukcapil
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="chat-input">
+          <input
+            type="text"
+            id="userMessage"
+            placeholder="Ketik pertanyaan Anda di sini..."
+          />
+          <button id="sendMessage"><i class="fas fa-paper-plane"></i></button>
+        </div>
+      </div>
+      <button class="chat-button" id="chatButton">
+        <i class="fas fa-robot"></i>
+        <span>Ayo Tanyakan</span>
+      </button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <div>
+              <h3>DISDUKCAPIL</h3>
+              <h4>Kabupaten Batang</h4>
+            </div>
+          </div>
+          <div class="footer-links">
+            <h4>Tautan Cepat</h4>
+            <ul>
+              <li><a href="#home">Beranda</a></li>
+              <li><a href="#layanan">Layanan</a></li>
+              <li><a href="#prosedur">Prosedur</a></li>
+              <li><a href="#persyaratan">Persyaratan</a></li>
+              <li><a href="#faq">FAQ</a></li>
+              <li><a href="#kontak">Kontak</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Layanan Lainnya</h4>
+            <ul>
+              <li><a href="#">Pembuatan KTP</a></li>
+              <li><a href="#">Kartu Keluarga (KK)</a></li>
+              <li><a href="#">Layanan Pembuatan Akta Kelahiran</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <h4>Ikuti Kami</h4>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 Dinas Kependudukan dan Pencatatan Sipil Kabupaten
+            Batang. Hak Cipta Dilindungi.
+          </p>
+          <div class="footer-bottom-links">
+            <a href="#">Kebijakan Privasi</a>
+            <a href="#">Syarat & Ketentuan</a>
+            <a href="#">Peta Situs</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </body>
+</html>

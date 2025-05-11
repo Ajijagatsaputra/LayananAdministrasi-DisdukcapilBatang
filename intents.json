@@ -1,0 +1,137 @@
+{
+  "intents": [
+    {
+      "tag": "sapaan",
+      "patterns": [
+        "Hai", "Halo", "Selamat Datang", "Selamat Pagi",
+        "Selamat Siang", "Selamat Malam", "Siapa disana", "Siapa Anda", "Hai apa kabar?"
+      ],
+      "responses": [
+        "Selamat datang di layanan Disdukcapil Kabupaten Batang.",
+        "Hai! Ada yang bisa saya bantu?",
+        "Selamat pagi! Ada yang bisa saya bantu?",
+        "Selamat siang! Ada yang bisa saya bantu?",
+        "Selamat malam! Ada yang bisa saya bantu?"
+      ]
+    },
+    {
+      "tag": "layanan_akta_kelahiran",
+      "patterns": [
+        "Bagaimana cara membuat akta kelahiran?",
+        "Saya ingin buat akta kelahiran",
+        "Syarat akta kelahiran apa saja?",
+        "Buat akta anak baru lahir gimana ya?"
+      ],
+      "responses": [
+        "Untuk membuat akta kelahiran, Anda bisa mengajukannya secara online melalui website kami. Syarat: fotokopi KTP orang tua, surat kelahiran dari rumah sakit, dan KK. Cek detail di halaman 'Persyaratan'."
+      ]
+    },
+    {
+      "tag": "layanan_ktp",
+      "patterns": [
+        "Saya ingin membuat KTP", "Bagaimana cara mengurus KTP?",
+        "Syarat bikin KTP apa saja?", "KTP saya hilang, gimana?"
+      ],
+      "responses": [
+        "Pembuatan KTP bisa dilakukan secara online. Untuk KTP hilang, perlu surat kehilangan dari kepolisian. Info lengkap tersedia di menu 'Layanan'."
+      ]
+    },
+    {
+      "tag": "pendaftaran_penduduk",
+      "patterns": [
+        "Bagaimana cara mendaftar sebagai penduduk baru?",
+        "Pindahan dari kota lain, harus daftar dulu?",
+        "Syarat jadi penduduk baru apa aja?"
+      ],
+      "responses": [
+        "Jika Anda baru pindah ke Kabupaten Batang, Anda harus melapor ke RT/RW lalu ke kelurahan dan membawa dokumen seperti KK lama, KTP, dan surat pindah. Setelah diverifikasi, Anda akan dimasukkan ke dalam data kependudukan Kabupaten Batang."
+      ]
+    },
+    {
+      "tag": "pindah_domisili",
+      "patterns": [
+        "Saya mau pindah alamat", "Bagaimana urus pindah domisili?",
+        "Mau pindah dari Batang ke Semarang", "Pindah tempat tinggal harus ke disdukcapil?"
+      ],
+      "responses": [
+        "Pengurusan pindah domisili dilakukan dengan membawa surat pengantar dari RT/RW dan kelurahan. Setelah itu ajukan permohonan pindah di Disdukcapil atau melalui layanan online kami."
+      ]
+    },
+    {
+      "tag": "layanan_kia",
+      "patterns": [
+        "Bagaimana cara membuat KIA?",
+        "Syarat pembuatan KIA apa saja?",
+        "Saya ingin buat Kartu Identitas Anak",
+        "KIA itu untuk apa?"
+      ],
+      "responses": [
+        "KIA (Kartu Identitas Anak) dibuat untuk anak usia 0-17 tahun. Syarat: akta kelahiran anak, KK, KTP orang tua, dan pas foto (usia di atas 5 tahun). Pengajuan bisa online maupun langsung ke Disdukcapil."
+      ]
+    },
+    {
+      "tag": "layanan_akta_kematian",
+      "patterns": [
+        "Bagaimana cara mengurus akta kematian?",
+        "Orang tua saya meninggal, harus urus apa?",
+        "Syarat akta kematian apa saja?"
+      ],
+      "responses": [
+        "Untuk akta kematian, syaratnya adalah surat kematian dari rumah sakit atau kelurahan, fotokopi KTP dan KK almarhum, dan fotokopi KTP pelapor. Silakan ajukan secara online atau datang langsung ke kantor."
+      ]
+    },
+    {
+      "tag": "jam_layanan",
+      "patterns": [
+        "Jam bukanya jam berapa?",
+        "Disdukcapil buka hari apa saja?",
+        "Jam operasionalnya kapan?"
+      ],
+      "responses": [
+        "Layanan online buka 24 jam setiap hari. Layanan tatap muka buka Senin–Jumat pukul 08.00–14.00 WIB."
+      ]
+    },
+    {
+      "tag": "kontak",
+      "patterns": [
+        "Kontak Disdukcapil", "Nomor telepon disdukcapil",
+        "Gimana cara hubungi disdukcapil?", "Ada nomor WA disdukcapil?"
+      ],
+      "responses": [
+        "Anda bisa menghubungi kami melalui WhatsApp di 0856-4176-4211 atau email ke disdukcapil@batangkab.go.id."
+      ]
+    },
+    {
+      "tag": "biaya",
+      "patterns": [
+        "Apakah pembuatan akta bayar?", "Berapa biaya bikin KTP?",
+        "Gratis gak layanan disdukcapil?"
+      ],
+      "responses": [
+        "Semua layanan di Disdukcapil Kabupaten Batang adalah **GRATIS**. Jika ada pungutan, harap laporkan."
+      ]
+    },
+    {
+      "tag": "pengaduan",
+      "patterns": [
+        "Saya ingin mengadu", "Saya ada keluhan",
+        "Dimana saya bisa melapor?", "Layanan lambat, saya mau komplain"
+      ],
+      "responses": [
+        "Mohon maaf atas ketidaknyamanannya. Silakan sampaikan pengaduan melalui WhatsApp resmi atau menu 'Pengaduan' di website kami."
+      ]
+    },
+    {
+      "tag": "status_pengajuan",
+      "patterns": [
+        "Bagaimana cek status pengajuan saya?",
+        "Saya sudah daftar online, statusnya gimana?",
+        "Cek proses pengajuan akta",
+        "Status dokumen saya sampai mana?"
+      ],
+      "responses": [
+        "Anda bisa cek status pengajuan melalui menu 'Cek Status' di website Disdukcapil atau dengan memasukkan nomor registrasi Anda di chatbot ini."
+      ]
+    }
+  ]
+}
