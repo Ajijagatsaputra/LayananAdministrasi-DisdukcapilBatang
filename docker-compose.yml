@@ -1,0 +1,18 @@
+version: '3.9'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: dukcapil-chatbot
+    ports:
+      - "8000:8000"
+    environment:
+      - ENV=production
+    restart: always
+    volumes:
+      - .:/app
+    # Uncomment kalau lo pake env file
+    # env_file:
+    #   - .env
