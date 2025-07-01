@@ -7,7 +7,7 @@ Chatbot Disdukcapil Kabupaten Batang merupakan asisten virtual interaktif berbas
 ✅ Fitur Utama:
 
     📝 Pendaftaran Akta Kelahiran Online: Memberikan panduan lengkap langkah-langkah dan syarat pengajuan akta kelahiran.
-    
+
     📌 Panduan Persyaratan Lengkap: Menjelaskan dokumen yang dibutuhkan sesuai jenis permohonan.
 
     📦 Pelacakan Status Permohonan: Memberikan informasi tentang cara memeriksa status permohonan akta kelahiran.
@@ -33,7 +33,7 @@ Dilengkapi dengan teknologi Natural Language Processing (NLP) menggunakan NLTK, 
 1. Clone repositori ini
 
 ```bash
-git clone https://github.com/Ajijagatsaputra/
+git clone https://github.com/Ajijagatsaputra/LayananAdministrasi-DisdukcapilBatang.git
 ```
 
 2. Instal dependensi yang diperlukan:
@@ -74,7 +74,7 @@ deactivate
 - `train.py`: Skrip untuk melatih model chatbot
 - `intents.json`: Berisi data pelatihan dengan intents, pola, dan respons
 - `classes.pkl`: File pickle yang berisi kelas intent
-- `chatbot_model.h5`: Model TensorFlow yang telah dilatih
+- `chatbot_model.pickle`: Model TensorFlow yang telah dilatih
 - `templates/`: Berisi template HTML
 - `static/`: Berisi CSS, JavaScript, dan gambar
 
