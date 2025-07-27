@@ -1,137 +1,579 @@
 {
   "intents": [
     {
-      "tag": "sapaan",
+      "tag": "ktp_baru",
       "patterns": [
-        "Hai", "Halo", "Selamat Datang", "Selamat Pagi",
-        "Selamat Siang", "Selamat Malam", "Siapa disana", "Siapa Anda", "Hai apa kabar?"
+        "Bagaimana cara membuat KTP baru?",
+        "Saya belum punya KTP, bagaimana membuatnya?",
+        "Syarat pembuatan KTP pertama kali apa saja?"
       ],
       "responses": [
-        "Selamat datang di layanan Disdukcapil Kabupaten Batang.",
-        "Hai! Ada yang bisa saya bantu?",
-        "Selamat pagi! Ada yang bisa saya bantu?",
-        "Selamat siang! Ada yang bisa saya bantu?",
-        "Selamat malam! Ada yang bisa saya bantu?"
+        "Untuk pembuatan KTP-el baru (pertama kali), Anda perlu membawa fotokopi KK dan datang ke Disdukcapil, MPP, atau kantor kecamatan untuk perekaman biometrik. Layanan ini gratis."
       ]
     },
     {
-      "tag": "layanan_akta_kelahiran",
+      "tag": "ktp_perubahan_data",
       "patterns": [
-        "Bagaimana cara membuat akta kelahiran?",
-        "Saya ingin buat akta kelahiran",
-        "Syarat akta kelahiran apa saja?",
-        "Buat akta anak baru lahir gimana ya?"
+        "Bagaimana cara mengubah data di KTP?",
+        "Saya mau ganti alamat di KTP, caranya?",
+        "KTP saya salah nama, bagaimana memperbaikinya?"
       ],
       "responses": [
-        "Untuk membuat akta kelahiran, Anda bisa mengajukannya secara online melalui website kami. Syarat: fotokopi KTP orang tua, surat kelahiran dari rumah sakit, dan KK. Cek detail di halaman 'Persyaratan'."
+        "Silakan datang ke Disdukcapil dengan membawa dokumen pendukung (misal: akta lahir, surat nikah, ijazah) dan KTP lama. Petugas akan membantu perubahan data KTP Anda."
       ]
     },
     {
-      "tag": "layanan_ktp",
+      "tag": "ktp_hilang",
       "patterns": [
-        "Saya ingin membuat KTP", "Bagaimana cara mengurus KTP?",
-        "Syarat bikin KTP apa saja?", "KTP saya hilang, gimana?"
+        "KTP saya hilang, bagaimana cara mengurusnya?",
+        "KTP hilang, apa saja syarat buat ulang?",
+        "Mau ganti KTP yang hilang, ke mana saya harus pergi?"
       ],
       "responses": [
-        "Pembuatan KTP bisa dilakukan secara online. Untuk KTP hilang, perlu surat kehilangan dari kepolisian. Info lengkap tersedia di menu 'Layanan'."
+        "Untuk mengganti KTP yang hilang, siapkan surat kehilangan dari kepolisian, fotokopi KK, dan fotokopi KTP (jika ada). Datang ke Disdukcapil untuk proses penggantian."
       ]
     },
     {
-      "tag": "pendaftaran_penduduk",
+      "tag": "kk_baru",
       "patterns": [
-        "Bagaimana cara mendaftar sebagai penduduk baru?",
-        "Pindahan dari kota lain, harus daftar dulu?",
-        "Syarat jadi penduduk baru apa aja?"
+        "Bagaimana cara membuat Kartu Keluarga baru?",
+        "Syarat membuat KK apa saja?",
+        "Saya baru menikah, apakah perlu buat KK baru?"
       ],
       "responses": [
-        "Jika Anda baru pindah ke Kabupaten Batang, Anda harus melapor ke RT/RW lalu ke kelurahan dan membawa dokumen seperti KK lama, KTP, dan surat pindah. Setelah diverifikasi, Anda akan dimasukkan ke dalam data kependudukan Kabupaten Batang."
+        "Untuk membuat KK baru, siapkan dokumen seperti surat nikah, fotokopi KTP suami istri, dan surat pindah jika dari KK berbeda. Silahkan dating ke kantor Disdukcapil, MPP, atau kecamatan."
       ]
     },
     {
-      "tag": "pindah_domisili",
+      "tag": "kk_perubahan",
       "patterns": [
-        "Saya mau pindah alamat", "Bagaimana urus pindah domisili?",
-        "Mau pindah dari Batang ke Semarang", "Pindah tempat tinggal harus ke disdukcapil?"
+        "Saya ingin menambahkan anak ke KK, bagaimana caranya?",
+        "Cara ubah data KK setelah kelahiran anak?",
+        "Bagaimana mengurangi anggota keluarga di KK?"
       ],
       "responses": [
-        "Pengurusan pindah domisili dilakukan dengan membawa surat pengantar dari RT/RW dan kelurahan. Setelah itu ajukan permohonan pindah di Disdukcapil atau melalui layanan online kami."
+        "Untuk perubahan data di KK (seperti penambahan/penurunan anggota keluarga), silakan bawa dokumen pendukung seperti akta kelahiran, akta kematian, atau surat pindah ke Disdukcapil, MPP atau kantor kecamatan"
       ]
     },
     {
-      "tag": "layanan_kia",
+      "tag": "kia_pembuatan",
       "patterns": [
         "Bagaimana cara membuat KIA?",
-        "Syarat pembuatan KIA apa saja?",
-        "Saya ingin buat Kartu Identitas Anak",
-        "KIA itu untuk apa?"
+        "Anak saya belum punya KIA, bagaimana caranya?",
+        "Syarat Kartu Identitas Anak apa saja?"
       ],
       "responses": [
-        "KIA (Kartu Identitas Anak) dibuat untuk anak usia 0-17 tahun. Syarat: akta kelahiran anak, KK, KTP orang tua, dan pas foto (usia di atas 5 tahun). Pengajuan bisa online maupun langsung ke Disdukcapil."
+        "Untuk anak usia 0 sampai 5 tahun: siapkan fotokopi KK dan akta lahir. Usia 5 sampai 17 tahun: tambahkan pas foto. KIA bisa dibuat di Disdukcapil."
       ]
     },
     {
-      "tag": "layanan_akta_kematian",
+      "tag": "pindah_domisili_keluar",
       "patterns": [
-        "Bagaimana cara mengurus akta kematian?",
-        "Orang tua saya meninggal, harus urus apa?",
-        "Syarat akta kematian apa saja?"
+        "Bagaimana cara mengurus pindah domisili ke luar kota?",
+        "Saya mau pindah ke provinsi lain, apa syaratnya?",
+        "Surat pindah domisili cara buatnya bagaimana?"
       ],
       "responses": [
-        "Untuk akta kematian, syaratnya adalah surat kematian dari rumah sakit atau kelurahan, fotokopi KTP dan KK almarhum, dan fotokopi KTP pelapor. Silakan ajukan secara online atau datang langsung ke kantor."
+        "Silakan ajukan surat pindah di Disdukcapil asal dengan membawa KTP dan KK. Setelah itu, bawa surat pindah tersebut ke Disdukcapil tujuan untuk membuat KK baru."
       ]
     },
     {
-      "tag": "jam_layanan",
+      "tag": "datang_domisili_baru",
       "patterns": [
-        "Jam bukanya jam berapa?",
-        "Disdukcapil buka hari apa saja?",
-        "Jam operasionalnya kapan?"
+        "Bagaimana cara mengurus pindah masuk dari daerah lain?",
+        "Saya baru pindah domisili, apakah perlu lapor?",
+        "Apa yang perlu saya lakukan setelah pindah ke kota ini?"
       ],
       "responses": [
-        "Layanan online buka 24 jam setiap hari. Layanan tatap muka buka Senin–Jumat pukul 08.00–14.00 WIB."
+        "Setelah tiba di domisili baru, bawa surat pindah dari daerah asal, KTP, dan KK ke Disdukcapil tujuan untuk proses penerbitan KK dan KTP baru sesuai alamat sekarang."
       ]
     },
     {
-      "tag": "kontak",
+      "tag": "nik_tidak_terdaftar",
       "patterns": [
-        "Kontak Disdukcapil", "Nomor telepon disdukcapil",
-        "Gimana cara hubungi disdukcapil?", "Ada nomor WA disdukcapil?"
+        "NIK saya tidak muncul di sistem, bagaimana solusinya?",
+        "Kenapa NIK saya tidak terdaftar?",
+        "Bagaimana mengaktifkan NIK yang tidak ditemukan?"
       ],
       "responses": [
-        "Anda bisa menghubungi kami melalui WhatsApp di 0856-4176-4211 atau email ke disdukcapil@batangkab.go.id."
+        "Segera laporkan ke Disdukcapil dengan membawa KTP dan KK. Petugas akan membantu pengecekan dan sinkronisasi NIK Anda agar aktif di database pusat."
       ]
     },
     {
-      "tag": "biaya",
+      "tag": "perbaikan_data_kependudukan",
       "patterns": [
-        "Apakah pembuatan akta bayar?", "Berapa biaya bikin KTP?",
-        "Gratis gak layanan disdukcapil?"
+        "Bagaimana cara memperbaiki kesalahan data kependudukan?",
+        "Nama saya salah di data Disdukcapil, bagaimana membetulkannya?",
+        "Tanggal lahir saya salah di KK, bisakah diganti?"
       ],
       "responses": [
-        "Semua layanan di Disdukcapil Kabupaten Batang adalah **GRATIS**. Jika ada pungutan, harap laporkan."
+        "Silakan datang ke Disdukcapil dengan membawa dokumen pembanding atau data dukung seperti akta lahir, ijazah, atau surat lainnya yang sah. Petugas akan melakukan verifikasi dan perbaikan data."
+      ]
+    },
+    {
+      "tag": "akta_kelahiran_pembuatan",
+      "patterns": [
+        "Bagaimana cara membuat akta kelahiran?",
+        "Syarat akta lahir apa saja?",
+        "Dimana buat akta lahir anak?"
+      ],
+      "responses": [
+        "Untuk membuat akta kelahiran, siapkan surat keterangan lahir dari rumah sakit/bidan, fotokopi KK, KTP orang tua, dan buku nikah. Proses bisa dilakukan di Disdukcapil, MPP, atau kantor kecamatan."
+      ]
+    },
+    {
+      "tag": "akta_kematian_pembuatan",
+      "patterns": [
+        "Bagaimana cara membuat akta kematian?",
+        "Apa syarat pembuatan akta kematian?",
+        "Keluarga saya meninggal, bagaimana mengurus akta kematian?"
+      ],
+      "responses": [
+        "Untuk membuat akta kematian, siapkan surat keterangan kematian dari rumah sakit/kelurahan, fotokopi KTP dan KK almarhum, serta KTP pelapor dan saksi. Ajukan di Disdukcapil, MPP atau kantor kecamatan."
+      ]
+    },
+    {
+      "tag": "akta_perkawinan_nonmuslim",
+      "patterns": [
+        "Bagaimana mencatatkan pernikahan non muslim?",
+        "Saya dan pasangan nonmuslim, bagaimana proses pencatatan pernikahan?",
+        "Akta perkawinan non Islam caranya?"
+      ],
+      "responses": [
+        "Pasangan non-Muslim dapat mencatatkan perkawinan di Disdukcapil dengan membawa surat nikah dari pemuka agama, KTP, KK, dan pas foto berdua."
+      ]
+    },
+    {
+      "tag": "akta_perkawinan_syarat",
+      "patterns": [
+        "Apa saja syarat mencatatkan pernikahan?",
+        "Dokumen untuk akta perkawinan apa saja?",
+        "Saya baru menikah, bagaimana buat akta nikah?"
+      ],
+      "responses": [
+        "Syarat pencatatan perkawinan: surat nikah dari pemuka agama, KTP dan KK kedua mempelai, pas foto berdua, dan surat keterangan belum menikah dari kelurahan."
+      ]
+    },
+    {
+      "tag": "akta_perceraian_pembuatan",
+      "patterns": [
+        "Bagaimana cara mencatat perceraian?",
+        "Apa saja syarat buat akta perceraian?",
+        "Sudah cerai, apakah perlu akta?"
+      ],
+      "responses": [
+        "Untuk mencatat perceraian, siapkan salinan putusan pengadilan yang telah berkekuatan hukum tetap, KTP dan KK terbaru. Pengajuan dilakukan di Disdukcapil."
+      ]
+    },
+    {
+      "tag": "pengakuan_anak",
+      "patterns": [
+        "Bagaimana proses pengakuan anak?",
+        "Saya ingin mengakui anak saya, caranya bagaimana?",
+        "Apakah bisa mengurus pengakuan anak di Disdukcapil?"
+      ],
+      "responses": [
+        "Pengakuan anak bisa diajukan di Disdukcapil dengan membawa akta kelahiran anak, KTP dan KK orang tua, serta salinan penetapan dari Pengadilan."
+      ]
+    },
+    {
+      "tag": "perubahan_nama_akta",
+      "patterns": [
+        "Bagaimana cara mengganti nama di akta?",
+        "Saya mau ganti nama, ke mana mengurusnya?",
+        "Apakah bisa ubah nama di akta lahir?"
+      ],
+      "responses": [
+        "Perubahan nama pada akta memerlukan penetapan pengadilan terlebih dahulu. Setelah itu, bawa penetapan, KTP, KK, dan akta terkait ke Disdukcapil untuk proses perubahan data."
+      ]
+    },
+    {
+      "tag": "pembatalan_akta_dobel",
+      "patterns": [
+        "Bagaimana jika ada akta dobel?",
+        "Nama saya tercatat dua kali, bagaimana solusinya?",
+        "Saya punya dua akta lahir, apakah bisa dibatalkan salah satunya?"
+      ],
+      "responses": [
+        "Jika ada duplikat akta atau data ganda, segera laporkan ke Disdukcapil dengan membawa semua dokumen asli dan salinannya. Petugas akan bantu verifikasi dan pembatalan yang tidak sah."
+      ]
+    },
+    {
+      "tag": "akta_lahir_lambat_lapor",
+      "patterns": [
+        "Saya terlambat membuat akta lahir, apakah bisa?",
+        "Apakah akta kelahiran bisa dibuat jika lewat dari 60 hari?",
+        "Bagaimana jika akta kelahiran belum dibuat sampai sekarang?"
+      ],
+      "responses": [
+        "Bisa. Untuk pelaporan kelahiran lebih dari 60 hari, siapkan surat keterangan lahir, KK, KTP orang tua, dan surat pernyataan. Pengurusan tetap di Disdukcapil."
+      ]
+    },
+    {
+      "tag": "akta_perkawinan_muslim",
+      "patterns": [
+        "Apakah pernikahan Muslim dicatat di Disdukcapil?",
+        "Sudah nikah di KUA, apakah harus urus akta lagi?",
+        "Pernikahan saya diurus di KUA, perlu lapor ke Disdukcapil?"
+      ],
+      "responses": [
+        "Perkawinan Muslim yang tercatat di KUA otomatis tercatat dalam sistem kependudukan. Tidak perlu mencatat ulang di Disdukcapil, namun pastikan data KK dan KTP sudah diperbarui."
+      ]
+    },
+    {
+      "tag": "layanan_gratis",
+      "patterns": [
+        "Apakah layanan disdukcapil gratis?",
+        "Bayar berapa buat KTP?",
+        "Apakah bikin KK bayar?",
+        "Layanan apa saja yang gratis?"
+      ],
+      "responses": [
+        "Semua layanan administrasi kependudukan dan pencatatan sipil di Disdukcapil tidak dipungut biaya alias gratis.",
+        "Ya, seluruh layanan seperti pembuatan KTP, KK, akta lahir, dan lainnya gratis sesuai peraturan perundang-undangan.",
+        "Tidak ada biaya untuk layanan di Disdukcapil. Jika diminta membayar, segera laporkan ke kanal pengaduan resmi."
+      ]
+    },
+    {
+      "tag": "jam_operasional",
+      "patterns": [
+        "Jam berapa Disdukcapil buka?",
+        "Hari apa saja Disdukcapil buka?",
+        "Jam layanan disdukcapil?",
+        "Disdukcapil buka sampai jam berapa?"
+      ],
+      "responses": [
+        "Jam operasional Disdukcapil Senin sampai kamis, pukul 08.00 - 15.00 dan Jumat, pukul 08.00 - 11.00."
       ]
     },
     {
       "tag": "pengaduan",
       "patterns": [
-        "Saya ingin mengadu", "Saya ada keluhan",
-        "Dimana saya bisa melapor?", "Layanan lambat, saya mau komplain"
+        "Saya mau komplain ke mana?",
+        "Bagaimana cara menyampaikan keluhan layanan?",
+        "Kalau ada pungli lapornya ke mana?",
+        "Lapor masalah layanan ke mana?"
       ],
       "responses": [
-        "Mohon maaf atas ketidaknyamanannya. Silakan sampaikan pengaduan melalui WhatsApp resmi atau menu 'Pengaduan' di website kami."
+        "Pengaduan dapat disampaikan melalui website resmi Disdukcapil, media sosial, atau langsung ke petugas pelayanan.",
+        "Jika ada masalah layanan atau pungli, laporkan ke Disdukcapil melalui kanal pengaduan atau ke Ombudsman.",
+        "Silakan gunakan kanal resmi Disdukcapil untuk menyampaikan pengaduan, seperti email, WhatsApp layanan, atau datang langsung."
       ]
     },
     {
-      "tag": "status_pengajuan",
+      "tag": "lama_proses",
       "patterns": [
-        "Bagaimana cek status pengajuan saya?",
-        "Saya sudah daftar online, statusnya gimana?",
-        "Cek proses pengajuan akta",
-        "Status dokumen saya sampai mana?"
+        "Berapa lama proses buat KTP?",
+        "Pembuatan KK berapa hari?",
+        "Butuh waktu berapa lama untuk proses dokumen?",
+        "Dokumen jadi berapa lama?"
       ],
       "responses": [
-        "Anda bisa cek status pengajuan melalui menu 'Cek Status' di website Disdukcapil atau dengan memasukkan nomor registrasi Anda di chatbot ini."
+        "Untuk dokumen prosesnya biasanya 1 sampai 2 hari kerja jika tidak ada kendala."
       ]
+    },
+    {
+      "tag": "dokumen_diperlukan",
+      "patterns": [
+        "Apa saja syarat buat KTP?",
+        "Bikin KK perlu bawa apa saja?",
+        "Syarat dokumen untuk akta lahir?",
+        "Perlu bawa apa untuk urus data?"
+      ],
+      "responses": [
+        "Untuk KTP hilang silahkan bawa surat kehilangan asli dari kepolisian(Jika hilang), KTP rusak(Jika rusak), fotocopy KK dan KTP.",
+        "Untuk KK silahkan bawa KK asli, Fotocoy surat nikah serta KTP asli suami istri dan surat pindah jika dari daerah lain.",
+        "Untuk akta lahir membawa surat kelahiran dari RS/Kelurahan, KK asli, fotocopy surat nikah."
+      ]
+    },
+    {
+      "tag": "blangko_ktp_kosong",
+      "patterns": [
+        "Apakah blangko KTP kosong?",
+        "KTP saya belum dicetak karena blangko habis",
+        "Bagaimana jika blangko KTP tidak tersedia?",
+        "Tidak bisa cetak KTP karena blangko habis"
+      ],
+      "responses": [
+        "Jika blangko KTP kosong, Anda akan diberikan Surat Keterangan Pengganti Identitas yang sah sampai KTP dicetak.",
+        "Dalam kasus blangko KTP kosong, Disdukcapil akan menerbitkan surat pengganti sementara sampai tersedia kembali."
+      ]
+    },
+    {
+      "tag": "layanan_khusus_disabilitas",
+      "patterns": [
+        "Apakah ada layanan khusus untuk difabel?",
+        "Bisa tidak Disdukcapil datang ke rumah?",
+        "Apakah lansia bisa dilayani di rumah?",
+        "Disdukcapil punya layanan keliling?"
+      ],
+      "responses": [
+        "Disdukcapil menyediakan layanan khusus bagi penyandang disabilitas dan lansia, seperti pelayanan keliling atau prioritas antrean.",
+        "Penyandang disabilitas bisa mengajukan permohonan layanan kunjungan rumah (jemput bola) ke Disdukcapil.",
+        "Ada fasilitas khusus untuk difabel dan lansia. Silakan hubungi petugas Disdukcapil untuk mengatur jadwal pelayanan khusus."
+      ]
+    },
+    {
+      "tag": "biaya",
+      "patterns": [
+        "Apakah pembuatan akta bayar?",
+        "Berapa biaya bikin KTP?",
+        "Gratis gak layanan disdukcapil?",
+        "Bikin KK bayar gak?",
+        "Apakah update data kependudukan bayar?"
+      ],
+      "responses": [
+        "Semua layanan di Disdukcapil adalah GRATIS. Jika ada pungutan, silakan laporkan."
+      ]
+    },
+    {
+      "tag": "alamat",
+      "patterns": [
+        "Alamat disdukcapil batang?",
+        "Disdukcapil batang dimana?",
+        "Alamat disdukcapil batang yang baru?",
+        "Dimanakah alamat disdukcapil?"
+      ],
+      "responses": [
+        "Jl. Dr. Wachidin No.56, Sawahan, Kauman, Kec. Batang, Kabupaten Batang, Jawa Tengah 51216."
+      ]
+    },
+    {
+      "tag": "KTP",
+      "patterns": [
+        "cara bikin ktp?",
+        "Bagaimana cara membuat KTP elektronik?",
+        "Bagaimana cara membuat KTP baru?"
+      ],
+      "responses": [
+        "Untuk membuat e-KTP, Anda perlu datang ke kantor Disdukcapil Batang, Kantor Kecamatan sesuai domisili atau MPP Kabupaten Batang dengan membawa fotokopi KK dan melakukan perekaman biometrik. Proses ini hanya bisa dilakukan satu kali seumur hidup."
+      ]
+    },
+    {
+      "tag": "KTP hilang",
+      "patterns": [
+        "cara cetak ktp yang hilang?",
+        "cara mencetak KTP lagi karena hilang?",
+        "Apa yang harus dilakukan jika e-KTP hilang atau rusak?",
+        "Bagaimana cara mencetak KTP yang hilang?"
+      ],
+      "responses": [
+        "Untuk mencetak e-KTP ulang dikarenakan hilang, Anda perlu datang ke kantor Disdukcapil Batang, dengan membawa surat kehilangan dari kepolisian, fotokopi ktp yang hilang dan fotokopi KK."
+      ]
+    },
+    {
+      "tag": "Perubahan Kartu keluarga",
+      "patterns": [
+        "Bagaimana mengurus perubahan data di KTP atau KK?",
+        "cara merubah status pekerjaan di kartu keluarga?",
+        "Cara merubah pendidikan di kartu keluarga?",
+        "cara merubah data di ktp dan kartu keluarga?"
+      ],
+      "responses": [
+        "Pengajuan perubahan data di KTP dan Kartu keluarga dilakukan di Disdukcapil dengan membawa dokumen pendukung (misalnya: ijazah, akta nikah, surat keterangan). Perubahan data wajib disertai KK dan KTP asli."
+      ]
+    },
+    {
+      "tag": "Akta kelahiran",
+      "patterns": [
+        "Bagaimana cara mengurus akta kelahiran anak?",
+        "Cara membuat akta kelahiran?",
+        "Dimana bisa mengurus akta kelahiran?",
+        "syarat membuat akta kelahiran?",
+        "Apa saja syarat untuk membuat akta kelahiran?"
+      ],
+      "responses": [
+        "Pengajuan pembuatan akta kelahiran dapat dilakukan di Kantor Disdukcapil Batang, Kantor Kecamatan sesuai alamat masing-masing dan Anda perlu menyiapkan: surat kelahiran dari rumah sakit/bidan atau Desa, fotokopi KK, KTP orang tua dan saksi, serta buku nikah yang sudah dilegalisir KUA."
+      ]
+    },
+    {
+      "tag": "pendaftaran_penduduk",
+      "patterns": [
+        "Pendaftaran Penduduk",
+        "Bagaimana cara mendaftar penduduk?"
+      ],
+      "responses": [
+        "Pendaftaran penduduk mencakup pembuatan KTP, KK, dan pindah datang. Silakan datang ke Disdukcapil dengan dokumen yang lengkap."
+      ]
+    },
+    {
+      "tag": "pencatatan_sipil",
+      "patterns": ["Pencatatan Sipil", "Catat pernikahan", "Catat kelahiran"],
+      "responses": [
+        "Pencatatan Sipil mencakup layanan seperti pencatatan perkawinan, perceraian, kelahiran, kematian, dan perubahan nama. Semua dapat dilakukan di Disdukcapil dengan dokumen yang sesuai."
+      ]
+    },
+    {
+      "tag": "layanan_informasi_umum",
+      "patterns": ["Informasi umum", "Layanan umum"],
+      "responses": [
+        "Untuk informasi umum, Anda dapat mengunjungi situs resmi Disdukcapil atau bertanya langsung melalui chatbot ini."
+      ]
+    },
+    {
+      "tag": "sapaan",
+      "patterns": [
+        "Halo",
+        "Hai",
+        "Selamat pagi",
+        "Selamat siang",
+        "Selamat sore",
+        "Apa kabar?",
+        "Hai, ada yang bisa saya bantu?",
+        "Hai, apa kabar hari ini?",
+        "Selamat malam",
+        "Halo! Bagaimana keadaanmu?",
+        "Selamat pagi! Apa rencanamu hari ini?",
+        "Hai, apa kabar kamu sekarang?",
+        "Selamat siang! Ada yang bisa saya bantu untukmu?",
+        "Halo! Bagaimana harimu?",
+        "Hai, apa yang sedang kamu pikirkan?",
+        "Selamat sore! Bagaimana kabarmu?",
+        "Halo, ada yang bisa saya lakukan untukmu?",
+        "Hai, apa yang sedang kamu kerjakan?",
+        "Selamat pagi! Semoga harimu menyenangkan.",
+        "Hai, apa yang bisa saya bantu hari ini?"
+      ],
+      "responses": [
+        "Halo! Selamat datang.",
+        "Hai! Bagaimana saya bisa membantu Anda?",
+        "Selamat pagi/siang/sore! Ada yang perlu ditanyakan?"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "tanya_kabar",
+      "patterns": [
+        "Apa kabar?",
+        "Bagaimana hari ini?",
+        "Apa yang sedang terjadi?",
+        "Apa berita?",
+        "Bagaimana kabarmu?",
+        "Apakabar?",
+        "Bagaimana keadaanmu?",
+        "Apa yang terbaru?",
+        "Bagaimana harimu?",
+        "Apa yang sedang kamu lakukan?",
+        "Bagaimana kehidupanmu?",
+        "Ada kabar apa?",
+        "Apa kabar hari ini?",
+        "Bagaimana kabar kesehatanmu?",
+        "Apa yang terjadi di sekitarmu?",
+        "Bagaimana keadaan cuaca?",
+        "Apa kabarnya dunia ini?",
+        "Bagaimana keadaanmu hari ini?",
+        "Ada yang menarik terjadi?",
+        "Apa yang sedang kamu pikirkan?"
+      ],
+      "responses": [
+        "Saya baik, terima kasih!",
+        "Saya adalah bot, jadi tidak memiliki perasaan, tetapi saya siap membantu Anda.",
+        "Kabar baik! Bagaimana dengan Anda?"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "ucapan_selamat",
+      "patterns": [
+        "Selamat ulang tahun!",
+        "Selamat hari jadi!",
+        "Selamat datang!",
+        "Selamat datang.",
+        "Selamat pagi!",
+        "Selamat malam!",
+        "Selamat sore!",
+        "Selamat siang!",
+        "Selamat bekerja!",
+        "Selamat liburan!",
+        "Selamat tahun baru!",
+        "Selamat natal!",
+        "Selamat hari kemerdekaan!",
+        "Selamat pernikahan!",
+        "Selamat atas prestasimu!",
+        "Selamat belajar!",
+        "Selamat bersenang-senang!",
+        "Selamat menikmati hidup!",
+        "Selamat sukses!",
+        "Selamat beraktivitas!"
+      ],
+      "responses": [
+        "Terima kasih! Selamat datang!",
+        "Terima kasih! Selamat datang! Ada yang bisa saya bantu?"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "tidak_dikenali",
+      "patterns": ["", "", "", "", ""],
+      "responses": [
+        "Maaf, saya tidak mengerti.",
+        "Saya tidak tahu.",
+        "Kata di luar kemampuan saya.",
+        "Mungkin Anda bisa menanyakan mengenai aplikasi ini."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "selamat_tinggal",
+      "patterns": [
+        "Sampai jumpa",
+        "Selamat tinggal",
+        "Selamat tinggal, semoga harimu menyenangkan",
+        "Sampai nanti",
+        "Sampai bertemu lagi",
+        "Selamat jalan",
+        "Semoga kita bisa bertemu lagi",
+        "Sampai jumpa besok",
+        "Selamat tinggal, tetap semangat!",
+        "Sampai ketemu di lain waktu",
+        "Selamat jalan, hati-hati di perjalanan",
+        "Sampai jumpa di kesempatan lain",
+        "Selamat tinggal, semoga sukses selalu",
+        "Sampai nanti, jangan lupa bahagia",
+        "Selamat berpisah",
+        "Sampai jumpa di lain waktu, semoga baik-baik saja",
+        "Selamat tinggal, semoga hari esok lebih baik",
+        "Sampai ketemu lagi di lain kesempatan",
+        "Selamat jalan, tetap semangat!",
+        "Sampai jumpa, semoga berhasil dalam segala hal"
+      ],
+      "responses": [
+        "Sampai jumpa!",
+        "Semoga harimu menyenangkan",
+        "Selamat tinggal! Jangan ragu untuk kembali lagi."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "terima_kasih",
+      "patterns": [
+        "Terima kasih",
+        "Terima kasih banyak",
+        "Makasih",
+        "Makasih banyak",
+        "Terima kasih atas bantuannya",
+        "Saya sangat berterima kasih",
+        "Terima kasih sebelumnya",
+        "Terima kasih ya",
+        "Makasih ya",
+        "Terima kasih banyak atas informasinya",
+        "Terima kasih atas perhatiannya",
+        "Matur nuwun",
+        "Suwun",
+        "Trimakasih",
+        "Terima kasih atas kerja samanya",
+        "Terima kasih banyak, Anda luar biasa!",
+        "Makasih atas dukungannya",
+        "Terima kasih, Anda sangat membantu",
+        "Makasih banyak, semoga berkah",
+        "Terima kasih, semoga hari Anda menyenangkan"
+      ],
+      "responses": [
+        "Terima kasih! Senang bisa membantu Anda.",
+        "Tidak masalah, dengan senang hati.",
+        "Sama-sama! Jika Anda memiliki pertanyaan lain, jangan ragu untuk bertanya."
+      ],
+      "context": [""]
     }
   ]
 }

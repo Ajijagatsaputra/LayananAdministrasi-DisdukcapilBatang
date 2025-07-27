@@ -29,7 +29,7 @@
         <div class="logo">
           <img
             src="{{ url_for('static', filename='images/lg-batang.png') }}"
-            alt="Logo Disdukcapil Brebes"
+            alt="Logo Disdukcapil Batang"
           />
           <div class="logo-text">
             <h1>DISDUKCAPIL</h1>
@@ -41,14 +41,9 @@
             <i class="fas fa-bars"></i>
           </div>
           <ul class="nav-menu">
-            <li><a href="#home">Home</a></li>
-            <li class="dropdown">
-              <a href="#layanan">Service</a>
-              <ul class="dropdown-menu">
-                <li><a href="#akta-kelahiran">Akta Kelahiran</a></li>
-                <li><a href="#ktp">KTP</a></li>
-                <li><a href="#kartu-keluarga">Kartu Keluarga</a></li>
-              </ul>
+            <li><a href="#home">Beranda</a></li>
+            <li>
+              <a href="#layanan">Layanan</a>
             </li>
 
             <li><a href="#prosedur">Prosedur</a></li>
@@ -65,7 +60,7 @@
       <div class="container">
         <div class="hero-content">
           <span class="hero-badge">Layanan Resmi</span>
-          <h1>Layanan Administrasi Kependudukan Digital</h1>
+          <h1>Selamat Datang di DISDUKCAPIL Kab. Batang</h1>
           <p>
             Nikmati kemudahan layanan seperti pembuatan KTP, KK, dan Akta
             Kelahiran secara online — cepat, transparan, dan tanpa antre.
@@ -93,7 +88,7 @@
         </div>
         <div class="hero-image">
           <img
-            src="{{ url_for('static', filename='images/hero-disdukcapil.jpg') }}"
+            src="{{ url_for('static', filename='images/capilbatang.jpeg') }}"
             alt="Layanan Administrasi Disdukcapil Batang"
           />
         </div>
@@ -105,10 +100,11 @@
       <div class="container">
         <i class="fas fa-bullhorn"></i>
         <p>
-          Penting: Layanan administrasi seperti pembuatan KK, KTP, dan Akta Kelahiran adalah hak setiap masyarakat dan
+          Penting: Layanan administrasi seperti pembuatan KK, KTP, dan Akta
+          Kelahiran adalah hak setiap masyarakat dan
           <strong>GRATIS</strong>. Laporkan jika ada pungutan biaya!
         </p>
-        <a href="//wa.me/6285647492399" class="banner-link">Hubungi Kami</a>
+        <a href="//wa.me/6285641764211"" class="banner-link">Hubungi Kami</a>
       </div>
     </div>
 
@@ -149,10 +145,8 @@
             </div>
             <h3>Pembuatan KTP</h3>
             <p>
-              Masyarakat dapat mengajukan pembuatan KTP elektronik secara mudah
-              dan transparan. Fitur pemantauan status, notifikasi otomatis,
-              serta asisten chatbot interaktif tersedia untuk mendampingi setiap
-              proses, kapan saja.
+               Masyarakat dapat mengajukan pembuatan KTP elektronik secara mudah
+              dan transparan.
             </p>
             <a href="#prosedur" class="service-link"
               >Selengkapnya <i class="fas fa-arrow-right"></i
@@ -164,8 +158,8 @@
             </div>
             <h3>Perbaikan Akta</h3>
             <p>
-              Layanan perbaikan data pada akta kelahiran yang sudah terbit
-              dengan kesalahan data.
+              Layanan ini disediakan untuk memperbaiki kesalahan data pada akta kelahiran yang sudah terbit, berdasarkan dokumen pendukung yang sah. Jika diperlukan, proses perbaikan dapat dilakukan melalui 
+              penetapan pengadilan negeri sesuai dengan ketentuan yang berlaku.
             </p>
             <a href="#prosedur" class="service-link"
               >Selengkapnya <i class="fas fa-arrow-right"></i
@@ -285,7 +279,7 @@
           <div class="step">
             <div class="step-number">2</div>
             <div class="step-content">
-              <h3>Unduh atau Ambil Formulir</h3>
+              <h3>Ambil Formulir</h3>
               <p>
                 Formulir bisa diunduh melalui website resmi Disdukcapil Batang
                 atau diambil langsung di kantor pelayanan.
@@ -305,10 +299,10 @@
           <div class="step">
             <div class="step-number">4</div>
             <div class="step-content">
-              <h3><strong>Ajukan ke Disdukcapil atau Petugas Desa</strong></h3>
+              <h3><strong>Ajukan ke Disdukcapil, MPP atau Petugas kantor kecamatan</strong></h3>
               <p>
-                Serahkan berkas ke loket Disdukcapil Kabupaten Batang atau
-                melalui petugas registrasi di desa/kelurahan.
+                Serahkan berkas ke loket Disdukcapil Kabupaten Batang, MPP atau
+                melalui petugas dikantor kecamatan.
               </p>
             </div>
           </div>
@@ -327,8 +321,8 @@
             <div class="step-content">
               <h3>Pengambilan Dokumen</h3>
               <p>
-                Dokumen yang telah selesai bisa diambil di kantor Disdukcapil
-                atau dikirim ke alamat Anda (jika layanan pengiriman tersedia).
+                 Dokumen yang telah selesai bisa diambil di kantor Disdukcapil
+                atau di kantor kecamatan sesuai alamat.
               </p>
             </div>
           </div>
@@ -352,51 +346,94 @@
           <h2 class="section-title">Persyaratan Pelayanan Administrasi</h2>
           <p class="section-description">
             Berikut adalah dokumen-dokumen yang perlu Anda siapkan untuk
-            mengakses layanan administrasi kependudukan di Disdukcapil Kabupaten Batang.
+            mengakses layanan administrasi kependudukan di Disdukcapil Kabupaten
+            Batang.
           </p>
         </div>
         <div class="requirements-container">
           <div class="requirements-card">
             <h3>Pelayanan Akta Kelahiran</h3>
             <ul class="requirements-list">
-              <li><i class="fas fa-check-circle"></i> Surat Keterangan Lahir dari fasilitas kesehatan</li>
-              <li><i class="fas fa-check-circle"></i> Fotokopi KTP orang tua</li>
-              <li><i class="fas fa-check-circle"></i> Fotokopi Kartu Keluarga</li>
-              <li><i class="fas fa-check-circle"></i> Buku Nikah/Akta Perkawinan (jika ada)</li>
-              <li><i class="fas fa-check-circle"></i> Formulir permohonan akta kelahiran</li>
-              <li><i class="fas fa-check-circle"></i> Surat kuasa bermaterai (jika diwakilkan)</li>
+              <li>
+                <i class="fas fa-check-circle"></i> Surat Keterangan Lahir dari
+                fasilitas kesehatan
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Fotokopi KTP orang tua
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Fotokopi Kartu Keluarga
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Buku Nikah/Akta Perkawinan
+                (jika ada)
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Formulir permohonan akta
+                kelahiran
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Surat kuasa bermaterai (jika
+                diwakilkan)
+              </li>
             </ul>
           </div>
           <div class="requirements-card">
             <h3>Pelayanan KTP-el dan KIA</h3>
             <ul class="requirements-list">
-              <li><i class="fas fa-check-circle"></i> Fotokopi Kartu Keluarga terbaru</li>
-              <li><i class="fas fa-check-circle"></i> Surat pengantar dari RT/RW dan kelurahan</li>
-              <li><i class="fas fa-check-circle"></i> Formulir F1.01 atau F1.21 sesuai kebutuhan</li>
-              <li><i class="fas fa-check-circle"></i> Pas foto sesuai ketentuan (untuk KIA)</li>
+              <li>
+                <i class="fas fa-check-circle"></i> Fotokopi Kartu Keluarga
+                terbaru
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Surat pengantar dari RT/RW
+                dan kelurahan
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Formulir F1.01 atau F1.21
+                sesuai kebutuhan
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Pas foto sesuai ketentuan
+                (untuk KIA)
+              </li>
             </ul>
           </div>
           <div class="requirements-card">
             <h3>Pelayanan Perubahan Data</h3>
             <ul class="requirements-list">
-              <li><i class="fas fa-check-circle"></i> Fotokopi dokumen pendukung perubahan (ijazah, surat nikah, dll)</li>
+              <li>
+                <i class="fas fa-check-circle"></i> Fotokopi dokumen pendukung
+                perubahan (ijazah, surat nikah, dll)
+              </li>
               <li><i class="fas fa-check-circle"></i> Kartu Keluarga asli</li>
-              <li><i class="fas fa-check-circle"></i> Surat pernyataan bermaterai (jika diperlukan)</li>
+              <li>
+                <i class="fas fa-check-circle"></i> Surat pernyataan bermaterai
+                (jika diperlukan)
+              </li>
             </ul>
           </div>
           <div class="requirements-card">
             <h3>Pelayanan Surat Pindah dan Datang</h3>
             <ul class="requirements-list">
               <li><i class="fas fa-check-circle"></i> Kartu Keluarga asli</li>
-              <li><i class="fas fa-check-circle"></i> Surat pengantar RT/RW dan kelurahan</li>
-              <li><i class="fas fa-check-circle"></i> Formulir permohonan pindah/datang</li>
-              <li><i class="fas fa-check-circle"></i> Dokumen pendukung lainnya (jika ada)</li>
+              <li>
+                <i class="fas fa-check-circle"></i> Surat pengantar RT/RW dan
+                kelurahan
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Formulir permohonan
+                pindah/datang
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Dokumen pendukung lainnya
+                (jika ada)
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </section>
-    
 
     <!-- Legal Basis Section -->
     <section class="legal-basis">
@@ -405,8 +442,8 @@
           <span class="section-subtitle">Dasar Hukum</span>
           <h2 class="section-title">Landasan Hukum</h2>
           <p class="section-description">
-            Layanan administrasi kependudukan diselenggarakan berdasarkan peraturan
-            perundang-undangan yang berlaku
+            Layanan administrasi kependudukan diselenggarakan berdasarkan
+            peraturan perundang-undangan yang berlaku
           </p>
         </div>
         <div class="legal-basis-container">
@@ -468,7 +505,8 @@
           <span class="section-subtitle">Tanya Jawab</span>
           <h2 class="section-title">Pertanyaan Umum</h2>
           <p class="section-description">
-            Temukan jawaban atas pertanyaan yang sering diajukan terkait layanan administrasi kependudukan di Disdukcapil Kabupaten Batang.
+            Temukan jawaban atas pertanyaan yang sering diajukan terkait layanan
+            administrasi kependudukan di Disdukcapil Kabupaten Batang.
           </p>
         </div>
         <div class="faq-container">
@@ -479,11 +517,13 @@
             </div>
             <div class="faq-answer">
               <p>
-                Proses pembuatan akta kelahiran membutuhkan waktu maksimal 14 hari kerja setelah seluruh dokumen dinyatakan lengkap oleh petugas Disdukcapil Batang.
+                Proses pembuatan akta kelahiran membutuhkan waktu maksimal 14
+                hari kerja setelah seluruh dokumen dinyatakan lengkap oleh
+                petugas Disdukcapil Batang.
               </p>
             </div>
           </div>
-    
+
           <div class="faq-item">
             <div class="faq-question">
               <h3>Apakah ada biaya untuk layanan kependudukan?</h3>
@@ -491,11 +531,13 @@
             </div>
             <div class="faq-answer">
               <p>
-                Tidak. Semua layanan administrasi kependudukan seperti pembuatan KTP, KK, akta kelahiran, dan lainnya di Disdukcapil Kabupaten Batang **GRATIS** tanpa dipungut biaya.
+                Tidak. Semua layanan administrasi kependudukan seperti pembuatan
+                KTP, KK, akta kelahiran, dan lainnya di Disdukcapil Kabupaten
+                Batang **GRATIS** tanpa dipungut biaya.
               </p>
             </div>
           </div>
-    
+
           <div class="faq-item">
             <div class="faq-question">
               <h3>Bagaimana cara mengurus KTP yang hilang?</h3>
@@ -503,11 +545,13 @@
             </div>
             <div class="faq-answer">
               <p>
-                Anda perlu menyiapkan surat kehilangan dari kepolisian, fotokopi KK, dan mengajukan permohonan cetak ulang melalui layanan online atau datang langsung ke kantor Disdukcapil Batang.
+                Anda perlu menyiapkan surat kehilangan dari kepolisian, fotokopi
+                KK, dan mengajukan permohonan cetak ulang melalui layanan online
+                atau datang langsung ke kantor Disdukcapil Batang.
               </p>
             </div>
           </div>
-    
+
           <div class="faq-item">
             <div class="faq-question">
               <h3>Apakah bisa mengurus dokumen kependudukan secara online?</h3>
@@ -515,38 +559,49 @@
             </div>
             <div class="faq-answer">
               <p>
-                Ya, sebagian besar layanan seperti akta kelahiran, KTP, KK, dan pindah datang dapat diurus secara online melalui website resmi Disdukcapil Kabupaten Batang atau platform digital yang tersedia.
+                Ya, sebagian besar layanan seperti akta kelahiran, KTP, KK, dan
+                pindah datang dapat diurus secara online melalui website resmi
+                Disdukcapil Kabupaten Batang atau platform digital yang
+                tersedia.
               </p>
             </div>
           </div>
-    
+
           <div class="faq-item">
             <div class="faq-question">
-              <h3>Bagaimana jika orang tua belum memiliki buku nikah saat mengurus akta kelahiran anak?</h3>
+              <h3>
+                Bagaimana jika orang tua belum memiliki buku nikah saat mengurus
+                akta kelahiran anak?
+              </h3>
               <span class="toggle-icon">+</span>
             </div>
             <div class="faq-answer">
               <p>
-                Akta kelahiran tetap dapat diterbitkan, namun hanya akan mencantumkan nama ibu. Untuk mencantumkan nama ayah, diperlukan surat pengakuan anak dari ayah dan persetujuan ibu, disahkan oleh notaris.
+                Akta kelahiran tetap dapat diterbitkan, namun hanya akan
+                mencantumkan nama ibu. Untuk mencantumkan nama ayah, diperlukan
+                surat pengakuan anak dari ayah dan persetujuan ibu, disahkan
+                oleh notaris.
               </p>
             </div>
           </div>
-    
+
           <div class="faq-item">
             <div class="faq-question">
-              <h3>Apakah bisa diwakilkan untuk mengurus dokumen kependudukan?</h3>
+              <h3>
+                Apakah bisa diwakilkan untuk mengurus dokumen kependudukan?
+              </h3>
               <span class="toggle-icon">+</span>
             </div>
             <div class="faq-answer">
               <p>
-                Ya, bisa. Cukup melampirkan surat kuasa bermaterai dan fotokopi KTP pemberi dan penerima kuasa saat pengajuan dokumen.
+                Ya, bisa. Cukup melampirkan surat kuasa bermaterai dan fotokopi
+                KTP pemberi dan penerima kuasa saat pengajuan dokumen.
               </p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    
 
     <!-- Contact Section -->
     <section id="kontak" class="contact">
@@ -575,7 +630,7 @@
               <i class="fas fa-phone"></i>
               <div>
                 <h3>Telepon</h3>
-                <p>(0283) 671204</p>
+                <p>(0285) 8351008</p>
               </div>
             </div>
             <div class="info-item">
@@ -631,7 +686,7 @@
                   required
                 ></textarea>
               </div>
-              <a href="https://wa.me/6285647492399" target="_blank">
+              <a href="https://wa.me/6285641764211" target="_blank">
                 <button type="button" class="btn primary">Kirim Pesan</button>
               </a>
             </form>
@@ -653,7 +708,7 @@
       </div>
     </section>
 
-    <!-- Chatbot -->
+   <!-- Chatbot -->
     <div class="chat-container">
       <div class="chat-box" id="chatBox">
         <div class="chat-header">
@@ -681,18 +736,18 @@
               <p>Anda dapat bertanya tentang:</p>
               <ul class="chat-suggestions">
                 <li>
-                  <button class="suggestion-btn">
-                    Persyaratan akta kelahiran
+                  <button class="suggestion-btn" data-intent="pendaftaran_penduduk">
+                    Pendaftaran Penduduk
                   </button>
                 </li>
                 <li>
-                  <button class="suggestion-btn">
-                    Layanan KTP
+                  <button class="suggestion-btn" data-intent="pencatatan_sipil">
+                    Pencatatan Sipil
                   </button>
                 </li>
                 <li>
-                  <button class="suggestion-btn">
-                    Lokasi kantor Disdukcapil
+                  <button class="suggestion-btn" data-intent="layanan_informasi_umum">
+                    Layanan dan Informasi Umum
                   </button>
                 </li>
               </ul>
