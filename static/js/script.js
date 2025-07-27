@@ -252,7 +252,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <a href="http://127.0.0.1:5000/#persyaratan" target="_blank">Lihat persyaratan di sini</a>.`,
 
     layanan_informasi_umum: `Layanan informasi umum mencakup jam pelayanan, lokasi kantor Disdukcapil Kabupaten Batang, serta informasi administratif lainnya. 
-    <a href="http://127.0.0.1:5000/#layanan" target="_blank">Informasi Umum Disini</a>.`,
+    <a href="http://127.0.0.1:5000/#kontak" target="_blank">Informasi Umum Disini</a>.`,
   };
 
   // Handle suggestion buttons
