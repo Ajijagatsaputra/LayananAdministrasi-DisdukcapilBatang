@@ -167,19 +167,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Process message text for formatting
   function processMessageText(text) {
-    // Convert URLs to clickable links
-    text = text.replace(
-      /(https?:\/\/[^\s]+)/g,
-      '<a href="$1" target="_blank">$1</a>'
-    );
-
-    // Convert line breaks to <br>
-    text = text.replace(/\n/g, "<br>");
-
-    // Wrap text in paragraph if it doesn't contain HTML
-    if (!text.includes("<")) {
-      text = `<p>${text}</p>`;
+    // Jangan ubah apa pun jika sudah mengandung tag <a>
+    if (!text.includes("<a")) {
+      // Kalau belum ada HTML <a>, konversi link biasa jadi hyperlink
+      text = text.replace(
+        /(https?:\/\/[^\s]+)/g,
+        '<a href="$1" target="_blank">$1</a>'
+      );
     }
+
+    // Ganti newline dengan <br>
+    text = text.replace(/\n/g, "<br>");
 
     return text;
   }
@@ -245,18 +243,28 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   ];
 
+  const hardcodedResponses = {
+    pendaftaran_penduduk: `Pendaftaran penduduk meliputi pembuatan KTP, Kartu Keluarga, surat pindah, dan lainnya. 
+    Silakan kunjungi kantor Disdukcapil atau layanan online melalui IKD (Identitas Kependudukan Digital). 
+    <a href="http://127.0.0.1:5000/#persyaratan" target="_blank">Lihat persyaratan di sini</a>.`,
+
+    pencatatan_sipil: `Pencatatan sipil mencakup pembuatan akta kelahiran, akta kematian, akta perkawinan, dan perceraian, akta pengangkatan anak, akta pengesahan anak dan akta pengakuan anak. 
+    <a href="http://127.0.0.1:5000/#persyaratan" target="_blank">Lihat persyaratan di sini</a>.`,
+
+    layanan_informasi_umum: `Layanan informasi umum mencakup jam pelayanan, lokasi kantor Disdukcapil Kabupaten Batang, serta informasi administratif lainnya. 
+    <a href="http://127.0.0.1:5000/#layanan" target="_blank">Informasi Umum Disini</a>.`,
+  };
+
   // Handle suggestion buttons
   document.addEventListener("click", (e) => {
     if (e.target.classList.contains("suggestion-btn")) {
       const intentTag = e.target.dataset.intent;
-      const matchedIntent = intents.find((intent) => intent.tag === intentTag);
-
-      if (matchedIntent) {
-        // Tampilkan intent sebagai pertanyaan user
+      if (intentTag in hardcodedResponses) {
+        // Tampilkan pertanyaan user
         addMessage("user", e.target.textContent);
 
-        // Tampilkan respon dari bot
-        const botResponse = matchedIntent.responses[0]; // bisa random nanti kalau lebih dari 1
+        // Ambil respons dari hardcodedResponses yang mengandung link
+        const botResponse = hardcodedResponses[intentTag];
         addMessage("bot", botResponse);
         scrollToBottom();
       }
